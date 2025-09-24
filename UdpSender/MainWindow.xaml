@@ -1,0 +1,23 @@
+﻿<Window x:Class="UdpSender.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UdpSender"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Margin="10">
+        <TextBlock Text="送信先IPアドレス"/>
+        <TextBox Name="IpTextBox" Text="127.0.0.1" Margin="0,5,0,10"/>
+
+        <TextBlock Text="送信先ポート"/>
+        <TextBox Name="PortTextBox" Text="54321" Margin="0,5,0,10"/>
+
+        <TextBlock Text="送信メッセージ"/>
+        <TextBox Name="MessageTextBox" Text="Hello, WPF!" Margin="0,5,0,10"/>
+
+        <Button Content="送信する" Click="SendButton_Click" Margin="0,10,0,0"/>
+
+        <TextBlock Name="StatusTextBlock" Margin="0,10,0,0" Foreground="Green"/>
+    </StackPanel>
+</Window>

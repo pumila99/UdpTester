@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "新しいプロファイル",
+    "Projects": [
+      {
+        "Path": "UdpReceiver\\UdpReceived.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "UdpSender\\UdpSender.csproj",
+        "Action": "Start",
+        "DebugTarget": "UdpSender"
+      }
+    ]
+  }
+]
